@@ -1,0 +1,11 @@
+一个mybatis结果映射插件,支持mybatis查询返回两个字段,第一个字段为key,第二个字段为value
+使用方式:
+1、添加maven依赖
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>result-helper-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+ 2、
+ Mapper java文件中返回类型为ValueMap,并且必须添加泛型
+ Mapper xml文件中resultMap指定为ValueMap,并且只能查询两个字段,多余字段将忽略,少字段则报错
